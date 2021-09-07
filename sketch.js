@@ -8,7 +8,6 @@ var bonusMoney, bonusMoneyImg ;
 var score = 0, coinsCollected = 0, diamondsCollected = 0, bonusMoneyCollected = 0;
 var coin_eg, diamond_eg, money_eg;
 var gameOver, gameOverImg;
-var bgm;
 
 function preload(){
   bgImg = loadImage("bgImg.jpg")
@@ -18,8 +17,6 @@ function preload(){
   diamondImg = loadImage("diamond.png")
   bonusMoneyImg = loadImage("bonus_money.png")
   gameOverImg = loadImage("Game_over.jfif")
-
-  bgm = loadSound("Bgm.mp4")
 }
 
 function setup() {
@@ -49,8 +46,6 @@ function setup() {
   diamondGroup = createGroup();
   moneyGroup = createGroup();
   birdGroup = createGroup();
-
-  bgm.play();
 
 }
 
